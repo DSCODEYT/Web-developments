@@ -1,0 +1,695 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Poppins:wght@500&display=swap');
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #F9F6FF;
+  overflow: hidden; 
+}
+
+
+/*header css codes*/ /*header css codes*/ /*header css codes*/ 
+/*header css codes*/ /*header css codes*/ /*header css codes*/ 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 18px;
+}
+
+nav {
+  order: 2; /* Positions the navigation in the middle */
+}
+
+.button-container {
+  order: 3; /* Positions the buttons at the end */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 15px;
+  position: relative;
+}
+
+nav ul li:first-child::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 69%;
+  height: 2px;
+  background-color: #5114FF;
+  border-radius: 2px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #303030;
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+
+
+/*main css codes*/ /*main css codes*/ /*main css codes*/ /*main css codes*/
+/*main css codes*/ /*main css codes*/ /*main css codes*/ /*main css codes*/
+main img {
+  position: absolute;
+  bottom: 20px;
+  right: 90px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  height: 560px;
+}
+
+.mainhead {
+  position: absolute;
+  top: 50%;
+  left: 80px; 
+  transform: translateY(-50%);
+}
+
+.mainheader {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 94px;
+  color: #303030;
+}
+
+#Journey {
+  text-decoration: none;
+  cursor: text;
+  font-weight: 500;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  padding: 12px 28px;
+  background-color: #5114FF;
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+#showSignupForm {
+  background-color: #5114FF;
+  color: #FFFFFF;
+  padding: 10px 28px;
+  height: ;
+}
+#showLoginForm {
+  margin-right: 22px;
+  border: 2px solid #5114FF;
+  padding: 8px 28px;
+  background: none;
+  color: #5114FF;
+}
+
+
+/*Sign up form */ /*Sign up form */ /*Sign up form */ /*Sign up form */ /*Sign up form */ /*Sign up form */ /*Sign up form */
+/*Sign up form */ /*Sign up form */ /*Sign up form */ /*Sign up form */ /*Sign up form */ /*Sign up form */ /*Sign up form */
+/*Sign up form */ /*Sign up form */ /*Sign up form */ /*Sign up form */ /*Sign up form */ /*Sign up form */ /*Sign up form */
+.signup-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(229, 220, 255, 0.96);
+  width: 100%;
+  height: 100vh;
+  display: none;
+  transform: translateY(100%);
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+    filter: blur(10px);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+
+#signupFormContainer {
+  display: none;
+}
+
+.signform-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1056px;
+  background: white;
+  height: 723px;
+  border-radius: 15px;
+  box-shadow: 15px 37px 67px rgba(0, 0, 0, 0.25); 
+}
+
+
+/*Signup form fields css code*/
+.centersignform {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  animation: slideInsing 0.5s ease-in-out forwards;
+  animation-delay: 0.6s;
+}
+
+@keyframes slideInsing {
+  0% {
+    transform: translateX(-5%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+#signupForm {
+  width: 473px;
+  margin: 0 auto;
+  padding: 1px;
+  background-color: #fff;
+  border-radius: 6px;
+  float: right;
+  margin: 55px 80px 55px 86px;
+}
+
+#signupForm h2 {
+  color: #131313;
+  margin-bottom: -1px;
+  margin-top: 0px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 39px;
+}
+
+#signupForm label {
+  color: #9A9A9A;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+#signupForm input[type="text"],
+#signupForm input[type="email"],
+#signupForm input[type="password"],
+#signupForm #radio-buttons {
+  width: 100%;
+  height: 32px;
+  padding: 5px;
+  border: 2px solid #EBECF0;
+  border-radius: 8px;
+  margin-bottom: 32px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  padding-left: 10px;
+  font-size: 14px;
+  color: #242424;
+}
+
+
+
+.alamlink a {
+  color: #5114FF;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.alamlink a:hover {
+  text-decoration: none;
+}
+
+.signflhorizontal {
+  display: flex;
+  gap: 60px;
+  margin-top: 50px;
+}
+
+#lablemargin {
+  margin-bottom: 4px;
+  display: inline-flex;
+}
+
+.radio-buttons {
+  width: 100%;
+}
+
+#radio-buttons {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.radiobflex {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.rdbwidth {
+  width: 50%;
+}
+
+#signupForm button[type="submit"] {
+  width: 104%;
+  margin-top: 5px;
+}
+
+#signupCutButton {
+  position: absolute;
+  top: 15px;
+  right: 19px;
+  cursor: pointer;
+}
+.signup-container.show {
+  display: flex;
+}
+
+
+
+/*css for signup form board*/
+.board{
+  margin-left: 13px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.board-back{
+  background: #7646FF;
+  width: 420px;
+  height: 698px;
+  border-radius: 15px;
+    
+}
+
+.board h1 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 46px;
+  line-height: 130%;
+  color: #FFFFFF;
+  margin-top: 91px;
+  margin-bottom: 0;
+}
+
+.board h3 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+.board p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 163.7%;
+  color: #EBECF0;
+  margin-top: 11px;
+}
+
+.board-details {
+  margin-left: 32px;
+  margin-top: 41px;
+  margin-right: 34px;
+  margin-bottom: 37px;
+}
+
+/*css for review card in signup form*/
+.review-card-position {
+  bottom: 45px;
+  position: absolute;
+}
+
+.review-card {
+  width: 356px;
+  height: 162px;
+  background: #5114FF;
+  border-radius: 10px;
+}
+
+.review-card-details {
+  position: absolute;
+  margin: 24px 22px;
+  animation: slideInre 1s ease-in-out forwards;
+}
+
+.review-card-details p{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #FFFFFF;
+  margin-top: 0;
+}
+
+@keyframes slideInre {
+  0% {
+    transform: translateX(-1%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.person-image {
+  margin-top: 32px;
+  display: flex;
+  gap: 12px;
+}
+
+.person-image p{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 130%;
+  color: #FFFFFF;
+  margin-bottom: 0;
+}
+
+.person-image h5{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  color: #BCBCBC;
+  margin-bottom: 0;
+  margin-top: 4px;
+}
+
+.review-card-position {
+  display: none;
+}
+
+.review-card-position.active {
+  display: block;
+}
+
+.signup-container.show {
+  display: flex;
+}
+
+
+
+/* Login Form */ /* Login Form */ /* Login Form */ /* Login Form */ /* Login Form */ /* Login Form */ /* Login Form */ /* Login Form */
+/* Login Form */ /* Login Form */ /* Login Form */ /* Login Form */ /* Login Form */ /* Login Form */ /* Login Form */ /* Login Form */
+/* Login Form */ /* Login Form */ /* Login Form */ /* Login Form */ /* Login Form */ /* Login Form */ /* Login Form */ /* Login Form */
+.login-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(229, 220, 255, 0.96);
+  width: 100%;
+  height: 100vh;
+  display: none;
+  transform: translateY(100%);
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  animation: slideInlog 0.5s forwards;
+}
+
+@keyframes slideInlog {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+    filter: blur(10px);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+
+#loginFormContainer {
+  display: none;
+}
+
+.form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+}
+
+#loginForm {
+  max-width: 615px;
+  margin: 0 auto;
+  padding: 60px;
+  padding-top: 10px;
+  background-color: #fff;
+  border: 2px solid #EBECF0;
+  border-radius: 15px;
+  border: none;
+  padding-bottom: 20px;
+  box-shadow: 15px 37px 58px rgb(0 0 0 / 22%);
+ 
+}
+
+#loginForm h2 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  color: #242424;
+  font-size: 24px;
+  margin-bottom: 28px;
+  opacity: 0;
+    transform: translateY(100%);
+   animation: slideInlogform 0.5s forwards;
+   animation-delay: 0.5s;
+}
+
+@keyframes slideInlogform {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.lablebottom {
+  margin-bottom: 20px;
+  transform: translateY(100%);
+  animation: slideInlogform 0.5s forwards;
+  animation-delay: 0.6s;
+  opacity: 0;
+}
+
+label {
+  color: #9A9A9A;
+  font-size: 16px;
+  font-weight: 500;
+
+}
+
+#loginForm input[type="email"],
+#loginForm input[type="password"] {
+  width: 96%;
+  height: 30px;
+  padding: 5px;
+  border: 2px solid #EBECF0;
+  border-radius: 8px;
+  margin-bottom: 4px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  padding-left: 10px;
+  font-size: 14px;
+  color: #242424;
+}
+
+#loginForm input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.fieldanimation {
+  transform: translateY(100%);
+  animation: slideInlogform 0.5s forwards;
+  animation-delay: 0.6s;
+  opacity: 0;
+}
+
+.rememerandforgot {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  transform: translateY(100%);
+  animation: slideInlogform 0.5s forwards;
+  animation-delay: 0.7s;
+  opacity: 0;
+}
+
+.fpcolor{
+  color: #5114FF;
+  font-weight: 500;
+}
+
+.loginsub-animation {
+  transform: translateY(100%);
+  animation: slideInlogform 0.5s forwards;
+  animation-delay: 0.7s;
+  opacity: 0;
+}
+
+.or-separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  transform: translateY(100%);
+  animation: slideInlogform 0.5s forwards;
+  animation-delay: 0.7s;
+  opacity: 0;
+}
+
+.or-line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #9A9A9A;
+  border-radius: 2px;
+}
+
+.or-text {
+  margin: 10px;
+  color: #9A9A9A;
+  font-weight: 500;
+}
+
+#loginForm button[type="submit"],
+#loginForm button#loginWithGoogle {
+  width: 100%;
+}
+
+#loginForm button#loginWithGoogle {
+  background: none;
+  color: #303030;
+  border: 2px solid #EBECF0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 10px 20px;
+  transform: translateY(100%);
+  animation: slideInlogform 0.5s forwards;
+  animation-delay: 0.7s;
+  opacity: 0;
+}
+
+.google-logo {
+  height: 20px; 
+}
+
+.button-text {
+  color: #242424;
+}
+
+.dhave-animation {
+  transform: translateY(100%);
+  animation: slideInlogform 0.5s forwards;
+  animation-delay: 0.8s;
+  opacity: 0;
+}
+
+.dhaccount {
+  font-weight: 500;
+  color: #9A9A9A;
+  text-align: center;
+  margin-top: 18px;
+}
+
+#loginForm p:last-child a {
+  color: #5114FF;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+#loginForm p:last-child a:hover {
+  text-decoration: none;
+}
+
+/* CSS for the login cancel button */
+.cut-button {
+  position: absolute;
+  top: 20px;
+  right: 28px;
+  cursor: pointer;
+}
+
+.login-container.show {
+  display: flex;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+
