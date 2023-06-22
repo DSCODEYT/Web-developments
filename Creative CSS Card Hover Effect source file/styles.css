@@ -1,0 +1,150 @@
+/*Subscribe to ds code channel for get more creative videos*/
+/*Subscribe to ds code channel for get more creative videos*/
+/*Subscribe to ds code channel for get more creative videos*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(90deg, #FF005C 0%, #AD00FF 100%);
+  width: 100%;
+  height: 100vh;
+}
+.center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+.box {
+  position: relative;
+  max-height: 370px;
+  height: 370px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0px 35px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+/*Subscribe to ds code channel for get more creative videos*/
+/*Subscribe to ds code channel for get more creative videos*/
+/*Subscribe to ds code channel for get more creative videos*/
+.content {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+}
+.content img {
+  width: 290px;
+  height: 370px;
+}
+.content p {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #ffffff;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  margin-top: -2.5em;
+  text-align: center;
+
+}
+/*Subscribe to ds code channel for get more creative videos*/
+/*Subscribe to ds code channel for get more creative videos*/
+/*Subscribe to ds code channel for get more creative videos*/
+.hover {
+    transform: scale(0, 0);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0, 41, 255, 0.85) 0%, rgba(189, 0, 255, 0.85) 100%);
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    border-radius: 20%;
+}
+.hover h1 {
+  color: #ffffff;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  text-align: center;
+}
+.hover p {
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  padding: 15px 20px;
+
+}
+/*Subscribe to ds code channel for get more creative videos*/
+/*Subscribe to ds code channel for get more creative videos*/
+/*Subscribe to ds code channel for get more creative videos*/
+.hover a{
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+	margin: 5px 80px;
+	padding: 8px 10px;
+	background: #4bd5ff;
+	border-radius: 20px;
+	cursor: pointer;
+	font-family: sans-serif;
+}
+.hover2{
+  transform: scale(0, 0);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(158, 0, 255, 0.85) 0%, rgba(0, 163, 255, 0.85) 100%);
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    border-radius: 20%;
+}
+.hover2 h1 {
+  color: #ffffff;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  text-align: center;
+}
+.hover2 p {
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  padding: 15px 20px;
+
+}
+.hover2 a{
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+	margin: 5px 80px;
+	padding: 8px 10px;
+	background: #00d79b;
+	border-radius: 20px;
+	cursor: pointer;
+	font-family: sans-serif;
+}
+
+.box:hover .hover {
+  transform: scale(1, 1);
+  border-radius: 0%;
+}
+.box:hover .hover2 {
+  transform: scale(1, 1);
+  border-radius: 0%;
+}
+
+.box:hover .content p {
+  color: transparent;
+}
+    
+/*Subscribe to ds code channel for get more creative videos*/
+/*Subscribe to ds code channel for get more creative videos*/
+/*Subscribe to ds code channel for get more creative videos*/
