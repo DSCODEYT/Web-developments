@@ -8,7 +8,6 @@ body {
   background-color: #f2f2f2;
 }
 
-
 .mainButtons button{
   padding: 10px 20px;
   height: 45px;
@@ -29,8 +28,6 @@ body {
   background: #d7d1ff;
   color: #7F6AFF;
 }
-
-
 
 .modal {
   display: none;
@@ -56,33 +53,26 @@ body {
   xxxxxxxxxxxxxxxxxxx  xxxxxx
   animation-duration: 0.5s;
   animation-timing-function: cubic-bezier(0.42, 0, 0.21, 0.99);
-
 }
 
 .modal.active .modal-content {
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
-
-  xxxxxxxxxxxxxxxx  xxxxxx
   animation-name: slideIn;
-
 }
 
- xxxxxxxxxxxxxxxx
 .modal.active.slideOut .modal-content {
   opacity: 0;
   transform: translate(-50%, -50%) scale(1);
   animation-name: slideOut;
 
 }
-
 .modal-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 15px;
 }
-
 .modal-header h2 {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -90,7 +80,6 @@ body {
   font-size: 22px;
   color: #4D4B4B;
 }
-
 .modal-message p {
   margin: 0;
   color: #5A5959;
@@ -101,7 +90,6 @@ body {
   line-height: 150.023%; 
   letter-spacing: 0.15px;
 }
-
 .modal-buttons {
   display: flex;
   justify-content: flex-end;
@@ -141,10 +129,6 @@ body {
   box-shadow: 0px 5px 9px 0px rgba(127, 106, 255, 0.40);
 }
 
-
-
-
-
 .modal-header button {
   background: none;
   border: none;
@@ -159,11 +143,6 @@ body {
   color: #4D4B4B;
 }
 
-
-
-
-
-
 @keyframes slideIn {
   from {
     top: 8%;
@@ -174,8 +153,6 @@ body {
     opacity: 1;
   }
 }
-
-
 @keyframes slideOut {
   from {
     top: 20%;
@@ -187,9 +164,6 @@ body {
 
   }
 }
-
-
-
 .modal2-content {
   position: absolute;
   top: 50%;
@@ -214,8 +188,6 @@ body {
   animation-name: slideIns;
 
 }
-
-
 .modal-input input {
   width: 100%;
   height: 45px;
@@ -230,18 +202,13 @@ body {
   box-sizing: border-box;
   transition: border-color 0.3s; 
 }
-
-
 .modal-input input:focus {
   border-color: #7F6AFF; 
   outline: none;
 }
-
-
 .modal-input input::placeholder {
   color: #999; 
 }
-
 .subscribe-button {
     padding: 8px 16px;
   margin-left: 20px;
@@ -263,9 +230,6 @@ body {
 .subscribe-button:hover {
   box-shadow: 0px 5px 9px 0px rgba(127, 106, 255, 0.18);
 }
-
-
-
 @keyframes slideIns {
   from {
     top: 50%;
@@ -276,7 +240,6 @@ body {
     opacity: 0;
   }
 }
-
 
 @keyframes slideOuts {
   from {
