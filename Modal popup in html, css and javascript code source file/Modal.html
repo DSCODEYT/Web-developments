@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Confirmation Modal</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
+
+</head>
+<body>
+  <div class="mainButtons">
+  <button id="shareButton">Share</button>
+  <button id="subscribeButton">Subscribe</button>
+  </div>
+
+  <div class="modal" id="confirmationModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Confirmation</h2>
+        <button id="closeModal">&times;</button>
+      </div>
+      <div class="modal-message">
+        <p>Are you sure you want to share this post on your social media? Sharing this content will let your friends and followers know about it.</p>
+      </div>
+      <div class="modal-buttons">
+        <button class="cancel-button" id="cancelButton">CANCEL</button>
+        <button class="share-button" id="shareConfirmButton">SHARE</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="subscriptionModal">
+    <div class="modal2-content">
+      <div class="modal-header">
+        <h2>Subscription</h2>
+        <button id="closeSubscriptionModal">&times;</button>
+      </div>
+      <div class="modal-message">
+        <p>Join us for the latest update! subscribe to our newsletter and stay updated with insightful articles, latest trends in technology, and exclusive offers.</p>
+      </div>
+      <div class="modal-input">
+      <input type="email" id="emailInput" placeholder="Enter your email">
+    </div>
+      <div class="modal-buttons">
+        <button class="subscribe-button" id="subscribeConfirmButton">SUBSCRIBE</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
