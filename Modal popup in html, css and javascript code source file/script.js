@@ -11,9 +11,6 @@ shareButton.addEventListener("click", () => {
   confirmationModal.style.display = "block";
 });
 
-
-
-
 closeModal.addEventListener("click", () => {
   confirmationModal.classList.add("slideOut");
   setTimeout(() => {
@@ -30,7 +27,6 @@ cancelButton.addEventListener("click", () => {
   }, 500); // Wait for the animation to complete (300ms)
 });
 
-
 window.addEventListener("click", (event) => {
   if (event.target === confirmationModal) {
     confirmationModal.classList.remove("open");
@@ -42,14 +38,10 @@ window.addEventListener("click", (event) => {
 });
 
 
-
-
-
 // Subscription Modal
 const subscribeButton = document.getElementById("subscribeButton");
 const subscriptionModal = document.getElementById("subscriptionModal");
 const closeSubscriptionModal = document.getElementById("closeSubscriptionModal");
-
 
 subscribeButton.addEventListener("click", () => {
   subscriptionModal.style.display = "block";
