@@ -1,0 +1,144 @@
+/* Add your CSS styles here to make the form visually appealing */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set the height of the body to the viewport height */
+    background-color: #f0f0f0;
+}
+
+form {
+    max-width: 350px; /* Set a maximum width for the form */
+    width: 320px;
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 40px;
+    background-color: #ffffff; /* Light background color */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06); /* Slight shadow */
+}
+
+h1 {
+    margin: 0;
+    padding-bottom: 40px;
+    font-size: 24px;
+    color: #313131;
+    margin-top: -8px;
+}
+
+label, input {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #4f4f4f;
+    font-family: 'Poppins', sans-serif;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 9px;
+    margin-bottom: 6px;
+    border: 1px solid #ccc;
+    /* outline: #16c56e; */
+    border-radius: 5px;
+    color: #717171;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    box-sizing: border-box; /* Add box-sizing property */
+}
+
+/* Change the outline color of the input field when it's focused */
+input:focus {
+    outline-color: #9ce9c4;
+}
+
+
+/* Style for the submit button */
+button[type="submit"] {
+    background-color: #099d52; /* Green background color */
+    color: white;
+    padding: 11px 20px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Style for the submit button on hover */
+button[type="submit"]:hover {
+    background-color: #16c56e; /* Darker green on hover */
+}
+
+
+/* Add styles for the success message */
+/* Add styles for the success message */
+.success-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff; /* Light green background color */
+    border: 2px solid #21ff90; /* Green border */
+    color: #11bd67; /* Green text color */
+    padding: 12px 25px;
+    border-radius: 8px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+    text-align: center;
+    z-index: 999;
+    font-size: 16px;
+    align-items: center;
+    display: flex;
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.05);
+}
+
+.success-message p {
+    margin: 0; /* Remove default paragraph margin */
+    align-items: center;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-weight: 500;
+}
+
+.success-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+/* Style the circle and checkmark within the SVG */
+.checkmark {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    margin: 0 auto;
+    margin-right: 10px;
+    animation: bounce 0.5s 3;
+}
+
+.circle {
+    fill: #11bd67; /* Circle background color */
+}
+
+.check {
+    /* fill: white; */
+    color: #ffffff; /* Checkmark color */
+    
+}
+
+
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-4px);
+    }
+}
